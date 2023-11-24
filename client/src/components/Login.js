@@ -1,6 +1,7 @@
+// client/src/components/Login.js
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import axios from 'axios';
 
 const Login = ({ setUser }) => {
@@ -23,7 +24,7 @@ const Login = ({ setUser }) => {
 
       switch (user.role) {
         case 'admin':
-          navigate('/admin'); // Use history.push to navigate without a full page reload
+          navigate('/admin');
           break;
         case 'driver':
           navigate('/driver');
@@ -53,3 +54,7 @@ const Login = ({ setUser }) => {
 };
 
 export default Login;
+
+
+
+

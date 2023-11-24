@@ -1,0 +1,370 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Add a subtle background color */
+}
+
+/* Header section */
+.driver-page-header {
+  background-color: #07314f; /* Blue header background */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to the start and end */
+  color: #fff; /* White header text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.driver-page-header h2 {
+  margin: 0;
+  font-size: 24px; /* Slightly larger font size */
+  font-weight: bold;
+}
+
+/* Personal information section */
+.driver-info-section {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  
+}
+
+.driver-info-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.driver-info-section p {
+  margin-bottom: 10px;
+}
+
+/* Additional options or controls section */
+.driver-options-section {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  color: #333; /* Change text color to a darker shade */
+}
+
+.driver-options-section button {
+  padding: 10px 15px;
+  background-color: #07314f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.driver-options-section a {
+  color: #07314f;
+  text-decoration: none;
+}
+
+/* Personal information popup */
+.personal-info-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1; /* Make sure the popup appears above other elements */
+  color: #333; /* Change text color to a darker shade */
+}
+
+.personal-info-popup h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.personal-info-popup p {
+  margin-bottom: 5px;
+}
+
+.personal-info-popup button {
+  float: right;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #07314f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add some additional color accents */
+.pers-info-btn {
+  margin-left: 25%;
+  height: 30px;
+  top: 15px;
+  right: 35%;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.trips-info{
+  height: 30px;
+  top: 15px;
+  margin-left: 1%;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.trips-info-popup-header{
+  color: #07314f;
+  position: relative;
+  left: 1%;
+}
+
+.personal-info-popup-header {
+  color: #07314f;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.trips-info-popup table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.trips-info-popup th, .trips-info-popup td {
+  padding: 7px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trips-info-popup tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.trips-info-popup-close{
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #07314f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.active-trips-info{
+  top: 15px;
+  margin-left: 1%;
+  height: 30px;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.active-trips-info-popup-header{
+  color: #07314f;
+  position: relative;
+  left: 1%;
+}
+
+.active-personal-info-popup-header {
+  color: #07314f;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.active-trips-info-popup table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.active-trips-info-popup th, .active-trips-info-popup td {
+  padding: 7px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.active-trips-info-popup tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.active-trips-info-popup-close{
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #07314f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} 
+
+.completed-trips-info{
+  top: 15px;
+  margin-left: 1%;
+  height: 30px;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.completed-trips-info-popup-header{
+  color: #07314f;
+  position: relative;
+  left: 1%;
+}
+
+
+.active-trips-info-popup table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.completed-trips-info-popup th, .completed-trips-info-popup td {
+  padding: 7px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.completed-trips-info-popup tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.completed-trips-info-popup-close{
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #07314f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} 
+
+.search_but {
+  top: 15px;
+  margin-left: 1%;
+  height: 30px;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.close_search_but{
+  top: 15px;
+  margin-left: 1%;
+  height: 30px;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.logout{
+  top: 15px;
+  margin-left: 1%;
+  height: 30px;
+  background-color: #07314f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.search_field{
+  margin-left: 2%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Text color */
+}
+.form-input-container {
+  display: flex;
+  flex-direction: row; /* Make the container a row */
+  justify-content: space-between; /* Add space between inputs */
+  margin-top: 3%;
+}
+
+.form-input {
+  flex: 1; 
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px;
+  width: 35%;
+}
+
+.form-button {
+  background-color: #07314f; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:disabled {
+  background-color: #ccc; /* Grey background color for disabled state */
+  cursor: not-allowed;
+}
+.dispatcher_chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d68c4; /* Green chat box background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #fff; /* White text color */
+}
+
+.dispatcher_chat h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.dispatcher_chat textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.dispatcher_chat button {
+  background-color: #fff;
+  color: #cfbf16;
+  
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dispatcher_chat button:hover {
+  background-color: #05305b;
+  
+}
+
+.dispatcher_chat div {
+  margin-top: 10px;
+  color: #f4f405;
+}
